@@ -1,17 +1,11 @@
-## CHANGE this to the name of your plugin.
-name: SlimefunAddon
+name: AdditionalWeaponry
 
-## CHANGE this to your username.
-author: CHANGEME
+author: ExistingEevee
 
-## CHANGE this to a meaninful but short description of your plugin.
-description: A generic Slimefun4-Addon
+description: Additional weaponry for your slimefun adventures
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
-main: me.CHANGEME.slimefunaddon.ExampleAddon
-
-## You can change this to link to your website or repository. You can also remove this line if you want to.
-website: https://github.com/TheBusyBiscuit/Slimefun4-Addon
+main: com.existingeevee.additionalweaponry.AdditionalWeaponry
 
 ## This is required and marks Slimefun as a plugin dependency.
 depend: [Slimefun]
