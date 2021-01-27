@@ -1,4 +1,4 @@
-package com.existingeevee.additionalweaponry.recipe;
+package com.existingeevee.additionalweaponry.type;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,13 +17,11 @@ public class BlastReactorRecipe {
 	//private ItemStack outputItemB;
 	
 	public BlastReactorRecipe(int reactionTime, ItemStack inputItemA, ItemStack inputItemB, ItemStack outputItem) {
-		
 		this.setInputItemA(inputItemA);
 		this.setInputItemB(inputItemB);
 		this.setOutputItem(outputItem);
 		this.setReactionTime(reactionTime);
 		this.setByproduct(null);
-
 	}
 
 	public BlastReactorRecipe(int reactionTime, ItemStack inputItemA, ItemStack inputItemB, ItemStack outputItem, ItemStack byproduct) {

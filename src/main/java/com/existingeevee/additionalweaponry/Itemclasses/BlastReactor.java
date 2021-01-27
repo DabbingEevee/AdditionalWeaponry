@@ -1,10 +1,10 @@
-package com.existingeevee.additionalweaponry.ItemClasses;
+package com.existingeevee.additionalweaponry.Itemclasses;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 import com.existingeevee.additionalweaponry.AdditionalWeaponry;
-import com.existingeevee.additionalweaponry.recipe.BlastReactorRecipe;
+import com.existingeevee.additionalweaponry.type.BlastReactorRecipe;
 
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
@@ -41,7 +41,7 @@ public class BlastReactor extends AContainer {
     
     @Override
     protected void registerDefaultRecipes() {
-    	for(BlastReactorRecipe recipe : AdditionalWeaponry.getRegisteredBlastReactorRecipes()) {
+    	for (BlastReactorRecipe recipe : AdditionalWeaponry.getRegisteredBlastReactorRecipes()) {
     		if (recipe.getByproduct() != null) {
     			registerRecipe(recipe.getReactionTime(), new ItemStack[] { recipe.getInputItemA(), recipe.getInputItemB() }, new ItemStack[] { recipe.getOutputItem(), recipe.getByproduct() });
     		} else {
